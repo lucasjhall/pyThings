@@ -2,8 +2,6 @@
 
 ## About
 
----
-
 A Python library to systematically create and call x-callback-urls for [Cultured Code's Things](https://culturedcode.com/things/) application. The entire Things URL Scheme is available [here](https://culturedcode.com/things/support/articles/2803573/) as well as a ["Link Builder"](https://culturedcode.com/things/support/articles/2803573/#link-builder) which this library seeks to emulate in a pythonic way.
 
 ### Requirements
@@ -29,8 +27,6 @@ Modification of existing Tasks and Projects require an auth token, which can be 
 Right click on a task, `Share > Copy Link` paste that link, `things:///show?id=$value` where `$value` is the id of the task/project.
 
 ## Examples
-
----
 
 ### Tasks
 
