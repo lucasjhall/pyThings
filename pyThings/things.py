@@ -38,14 +38,14 @@ def x_call_handler(obj):
 
     try:
         if obj.activate_app:
-            activate_app = "-activateApp YES"
+            activate_app = "YES"
         else:
-            activate_app = ""
+            activate_app = "NO"
     except: #pylint: disable=broad-except
         activate_app = ""
 
 
-    args = [ x_call_path, '-url', obj.callback_url, activate_app ]
+    args = [ x_call_path, '-url', obj.callback_url, "-activateApp", activate_app ]
 
     popen = subprocess.Popen(args, stdout=subprocess.PIPE)
     response_obj = json.loads(popen.stdout.read())
